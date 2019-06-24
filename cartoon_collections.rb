@@ -40,5 +40,5 @@ potentially_cheesy_items = %w[umbrella spinach cheddar helicopter]
 def find_the_cheese(potentially_cheesy_items)
   
   cheese_types = ["cheddar", "gouda", "camembert"]
-  potentially_cheesy_items.find { |maybe_cheese| 
+  potentially_cheesy_items.find { |maybe_cheese| cheeses.include?(maybe_cheese)}
 end
